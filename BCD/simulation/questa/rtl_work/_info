@@ -1,0 +1,101 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/simulation/questa
+T_opt
+!s110 1740555703
+V^W2Gh<]B7RiH?7`Fj<l`P1
+04 6 4 work BCD_TB fast 0
+=1-98fa9bf3bf64-67bec5b4-3ae-370c
+R0
+!s12b OEM100
+!s124 OEM10U6 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vBCD
+2C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BCD.v
+Z3 !s110 1740555696
+!i10b 1
+!s100 P;l`Z@`jHT`VDfY5I2>AS3
+I3BzJM6c1=;gbJldR4<jGY3
+R1
+w1740001594
+8C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BCD.v
+FC:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BCD.v
+!i122 0
+L0 3 38
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+!s108 1740555695.000000
+!s107 C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BCD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD|C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BCD.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@b@c@d
+vBCD_TB
+2C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BDC_TB.sv
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1740555697
+!i10b 1
+!s100 6MSSN8[DEQS^^C>Ddj6V]2
+I@VfAfd24MOCGFjCg_z8Cc1
+S1
+R1
+w1739912040
+8C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BDC_TB.sv
+FC:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BDC_TB.sv
+!i122 2
+L0 1 34
+R4
+R5
+r1
+!s85 0
+31
+Z8 !s108 1740555696.000000
+!s107 C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BDC_TB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD|C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/BDC_TB.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work work {+incdir+C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@b@c@d_@t@b
+vdecoder_7seg
+2C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/Display.v
+R3
+!i10b 1
+!s100 ]XWIb9lSMn4[b@@0fPKE43
+IG>I]dQ??eWU2o]k0A5M500
+R1
+w1740001576
+8C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/Display.v
+FC:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/Display.v
+!i122 1
+L0 2 20
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/Display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD|C:/Users/edwin/Desktop/Practicas Clase/BinarioDecimal/TE2002B/BCD/Display.v|
+!i113 0
+R6
+R7
+R2
