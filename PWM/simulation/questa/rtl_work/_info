@@ -1,0 +1,186 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/edwin/Desktop/Practicas Clase/PWM/simulation/questa
+T_opt
+!s110 1740474516
+VMjNkDHP=KIBd=TzhF3iIT2
+Z3 04 6 4 work PWM_TB fast 0
+=1-98fa9bf3bf64-67bd8894-17e-1b14
+R1
+Z4 !s12b OEM100
+!s124 OEM10U6 
+Z5 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R2
+T_opt1
+!s110 1741337790
+V8L1zC4GJnlgRI3MKYOdDZ0
+R3
+=1-98fa9bf3bf64-67cab4bd-1b4-3d24
+R1
+R4
+!s124 OEM10U11 
+R5
+R6
+n@_opt1
+R7
+vclkdiv
+Z8 2C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM.v
+Z9 !s110 1741337786
+!i10b 1
+!s100 5b1cbMlO@l0kS[NELdl9b3
+IgW7E2An@kCDdfd1Q88LI:2
+R2
+Z10 w1741336125
+Z11 8C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM.v
+Z12 FC:/Users/edwin/Desktop/Practicas Clase/PWM/PWM.v
+!i122 0
+L0 3 29
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z15 !s108 1741337786.000000
+Z16 !s107 C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM.v|
+Z17 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/edwin/Desktop/Practicas Clase/PWM|C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM.v|
+!i113 0
+Z18 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z19 !s92 -vlog01compat -work work {+incdir+C:/Users/edwin/Desktop/Practicas Clase/PWM} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vd_ff
+R8
+R9
+!i10b 1
+!s100 dbkfIPBRkKX2PhmBLVgXE2
+I7Vb:00hNDzJZPUWl6WODi0
+R2
+R10
+R11
+R12
+!i122 0
+L0 115 16
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R19
+R6
+vdebouncer
+R8
+R9
+!i10b 1
+!s100 ]jA31Hll89=PYB90I^BjK1
+INBkVnFQ]@3h?5C0HaVmaH2
+R2
+R10
+R11
+R12
+!i122 0
+L0 94 18
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R19
+R6
+vPWM
+R8
+R9
+!i10b 1
+!s100 Phm91m@UzNmU_aX2LZXJ?0
+ICcG6Q8;6iWj`G^eCga;`Q1
+R2
+R10
+R11
+R12
+!i122 0
+L0 35 56
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R19
+R6
+n@p@w@m
+vPWM_TB
+2C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM_TB.v
+!s110 1741337787
+!i10b 1
+!s100 kfSC@TfI7;k6Qm6c9P=i21
+I;F;f^4QSZfe5FVO=0d<e60
+R2
+w1741337413
+8C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM_TB.v
+FC:/Users/edwin/Desktop/Practicas Clase/PWM/PWM_TB.v
+!i122 1
+L0 3 41
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/edwin/Desktop/Practicas Clase/PWM|C:/Users/edwin/Desktop/Practicas Clase/PWM/PWM_TB.v|
+!i113 0
+R18
+R19
+R6
+n@p@w@m_@t@b
