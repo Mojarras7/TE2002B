@@ -95,12 +95,7 @@ set_location_assignment PIN_D19 -to display_miles[1]
 set_location_assignment PIN_E17 -to display_miles[0]
 set_location_assignment PIN_P11 -to clk
 set_location_assignment PIN_B14 -to rst
-set_global_assignment -name VERILOG_FILE counter_debouncer.v
-set_global_assignment -name VERILOG_FILE counter.v
 set_global_assignment -name VERILOG_FILE ClockDiv.v
-set_global_assignment -name VERILOG_FILE OneShot.v
-set_global_assignment -name SYSTEMVERILOG_FILE OneShot_tb.sv
-set_global_assignment -name VERILOG_FILE debouncer.v
 set_global_assignment -name VERILOG_FILE decoder_7seg.v
 set_global_assignment -name VERILOG_FILE BCD.v
 set_global_assignment -name VERILOG_FILE mainCounterClkDiv.v

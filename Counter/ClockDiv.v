@@ -1,4 +1,4 @@
-module clkdiv #(parameter constantN = 50000000) (
+module clkdiv #(parameter constantN = 1_000_000) (
     input clk,
     input rst,
     output reg clk_div

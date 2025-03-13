@@ -1,4 +1,6 @@
-module Frecuenciometro(
+//reutilice el codigo del frecuenciometro
+
+module Chronometer(
     input clk,
     input rst, 
 	 input pausa,

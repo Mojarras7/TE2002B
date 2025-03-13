@@ -1,62 +1,130 @@
-module Frecuenciometro(
-    input clk,
-    input rst, 
-	 input pausa,
-    //input signal_in, 
-    output reg [6:0] seg0, 
+module SumModule(
+	input clk, rst, enable,
+	input [3:0] sumar,
+	   output reg [6:0] seg0, 
     output reg [6:0] seg1, 
     output reg [6:0] seg2, 
     output reg [6:0] seg3, 
     output reg [6:0] seg4, 
-    output reg [6:0] seg5  
+    output reg [6:0] seg5 
+	 
+
+	
 );
 
-    //reg [31:0] contadorPulsos; 
-    reg [31:0] contadorTiempo;
-    reg [31:0] frecuencia;     
-    //reg estadoAnterior;  
-	 
-	//contar pulsos
-    always @(posedge clk or posedge rst) 
-	 begin
-        if (rst) 
-		  begin
-            //contadorPulsos <= 0;
-            contadorTiempo <= 0;
-            frecuencia <= 0;
-        end 
-		  else if(!pausa)
-				begin
-            if (contadorTiempo < 500_000) 
-				begin  
-                contadorTiempo <= contadorTiempo + 1;
-					 /*
-                if (signal_in && !estadoAnterior) 
-					 begin  
-                    contadorPulsos <= contadorPulsos + 1;
-                end
-                estadoAnterior <= signal_in;
-					 */
-            end 
-				else 
-				begin
-                frecuencia <= frecuencia + 1; 
-                //contadorPulsos <= 0;
-                contadorTiempo <= 0;
-					 if(frecuencia == 6000)
-						begin 
-							contadorTiempo <= 0;
-							frecuencia <= 0;
-						
-						end
-					 
-            end
- 
-        end
-    end
 
-    // Extraer digito
-    reg [3:0] d0, d1, d2, d3, d4, d5;
+
+localparam 		   DIG1 = 1,
+						DIG2 = 2,
+						DIG3 = 3,
+						DIG4 = 4,
+						SUMADO = 5,
+						IDLE = 0;
+
+reg [3:0] current_state;
+reg [3:0] next_state;
+
+reg [31:0] sumatoria = 0;
+reg [31:0] frecuencia;     
+
+
+
+
+always@(posedge clk)
+	begin 
+		if(rst)
+			current_state <= IDLE; 
+		else
+			current_state <= next_state; 
+	end
+
+	
+	
+/*
+always@(*)
+	begin
+		case(current_state)
+			IDLE:
+
+					begin
+						sumatoria  = 0;
+						next_state = DIG1;
+					end
+					
+			DIG1:
+				begin
+				sumatoria = sumatoria + 
+				next_state = DIG2;
+				end
+			DIG2:
+				begin
+				sumatoria = sumatoria + (sumar [0]*1) + (sumar [1]*2) + (sumar [2]*4)  ;
+				next_state = DIG3;
+				end
+			DIG3:
+				begin
+				sumatoria = sumatoria + (sumar [0]*1) + (sumar [1]*2);
+				next_state = DIG4;
+				end
+			DIG4:
+				begin
+				sumatoria = sumatoria +(sumar [0]*1);
+				next_state = SUMADO;
+				end
+			SUMADO:
+				begin
+						frecuencia <= sumatoria;
+				end
+					
+			endcase
+	end
+*/
+
+
+/*
+
+always @(posedge clk) 
+begin
+	case (current_state)
+		IDLE:
+			begin
+				sumatoria  <= 0;
+				next_state <= DIG1;
+			end
+			
+		DIG1:
+			begin
+				sumatoria <= sumar;
+				next_state <= DIG2;
+			end
+		DIG2:
+			begin
+				sumatoria <= sumatoria + (sumar - 1);
+				next_state <= DIG3;
+			end
+		DIG3:
+			begin
+				sumatoria <= sumatoria + (sumar - 2);
+				next_state <= DIG4;
+			end
+		DIG4:
+			begin
+				sumatoria <= sumatoria + (sumar - 3);
+				next_state <= SUMADO;
+			end
+		SUMADO:
+			begin
+				frecuencia <= sumatoria;
+			end
+	endcase
+end
+*/
+
+
+
+
+	
+	    reg [3:0] d0, d1, d2, d3, d4, d5;
 
     always @(posedge clk) 
 	 begin
@@ -75,7 +143,7 @@ module Frecuenciometro(
         d5 = temp % 10;
     end
 	
-    // Conversión a segmentos
+	
     always @(posedge clk) 
 	 begin
         case (d0)
@@ -163,4 +231,6 @@ module Frecuenciometro(
         endcase
     end
 
+
+	
 endmodule
